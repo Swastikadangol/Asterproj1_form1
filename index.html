@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="post">
+        <div id="email">
+            <label for="email">Email address</label><br>
+            <input type="email" name="email" id="email"><br>
+        </div>
+
+        <div>
+            <label for="name">Full name</label><br>
+            <span id="name">
+                <input type="text" name="firstname" id="firstname" placeholder="First name">
+                <input type="text" name="lastname" id="lastname" placeholder="Last name"><br>
+            </span>
+        </div>
+
+        <div>
+            <label for="address">Address</label><br>
+            <input type="text" name="street_address" id="street_add" placeholder="Street Address"><br>
+            <input type="text" name="office_name" id="office_name" placeholder="Office, Suite, Apt."><br>
+        </div>
+        <div class="city_state">
+            <span class="city">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+            </span>
+
+            <span>
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="" hidden selected>Choose...</option>
+                    <option value="bagmati">Bagmati</option>
+                    <option value="madhesh">Madhesh</option>
+                    <option value="karnali">Karnali</option>
+                    <option value="koshi">Koshi</option>
+                    <option value="gandaki">Gandaki</option>
+                    <option value="lumbini">Lumbini</option>
+                    <option value="sudurpashchim">Sudurpashchim</option>
+                </select>
+
+            </span>
+            <span class="zip">
+
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip"><br>
+            </span>
+
+        </div>
+
+        <div>
+            <label for="payment">Payment details</label><br>
+            <input type="text" name="payment" id="payment"
+                placeholder="🔒  0000 0000 0000 0000           MM/YY         CVV       ZIP"><br>
+            <p>ENCRYPTED AND SECURED</p>
+        </div>
+
+        <div>
+            <label for="technologies">What radio technologies are you doing?</label><br>
+            <span class="checkbox">
+                <span><input type="checkbox" name="2G" id="2G">2G</span>
+                <span><input type="checkbox" name="3G" id="3G">3G</span>
+                <span><input type="checkbox" name="4G" id="4G">4G LTE</span>
+                <span><input type="checkbox" name="CAT" id="CAT">CAT-M </span><br>
+            </span>
+        </div>
+
+        <div>
+            <label for="data">How much data do you expect to use each month?</label><br>
+            <span class="radio">
+                <span><input type="radio" name="0-50" id="0-50">0-50 MB</span>
+                <span><input type="radio" name="50-250" id="50-250">50-250 MB</span>
+                <span><input type="radio" name="250-1" id="250-1">250 MB-1 GB</span>
+                <span style="color: rgb(112, 112, 112);"><input type="radio" name="1GB" id="1GB" style="cursor: not-allowed;" disabled>1GB+</span> <br>
+            </span>
+        </div>
+
+        <div>
+            <label for="promo_code">Promo code</label><br>
+            <input type="text" name="promo_code" id="promo_code"><br>
+        </div>
+
+        <div class="offers">
+            <label style="color: rgb(112, 112, 112);"><input type="checkbox" name="offer" id="offer" disabled>Sign me up
+                for annoying offers</label>
+            <button type="submit">Place order</button>
+        </div>
+    </form>
+</body>
+</html>

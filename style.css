@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+form{
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px black;
+    padding: 10px 15px;
+    background-color: white;
+    box-sizing: border-box;
+}
+div{
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=email], input[type=text], select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 3px;
+    /* box-shadow: 0 0 3px grey; */
+    border: 1px solid grey;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#street_add{
+    margin-bottom: 5px;
+}
+
+.city_state{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.city{
+    width: 70%;
+}
+.zip{
+    width: 25%;
+}
+
+input[type=checkbox], input[type=radio]{
+    cursor: pointer;
+}
+.checkbox span{
+    margin-right: 8%;
+}
+
+.radio span{
+    margin-right: 2%;
+}
+
+button{
+    float: right;
+    padding: 7px 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    background-color: rgb(28, 28, 209);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#offer:hover{
+    cursor:not-allowed;
+}
+
+p{
+    margin: 4px;
+    padding: 0;
+    font-size: 11px;
+}
+
+label{
+    font-weight: bold;
+    line-height: 30px;
+}
